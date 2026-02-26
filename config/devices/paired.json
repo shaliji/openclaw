@@ -1,0 +1,149 @@
+{
+  "299dec3a548b3bacc7a53b36db3008e163d4313d7d95d3b9509a6f9f697e5a48": {
+    "deviceId": "299dec3a548b3bacc7a53b36db3008e163d4313d7d95d3b9509a6f9f697e5a48",
+    "publicKey": "eJRciryFav35xNLwtq6qAB1n7KbknKKO3jC1DlA-uIk",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "remoteIp": "192.168.65.1",
+    "tokens": {
+      "operator": {
+        "token": "ud_ibs0Vwo_8Yzr9w8AKT4ObBMwHvuw3O_v_40Q7iQI",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1772016952472,
+        "lastUsedAtMs": 1772018060798
+      }
+    },
+    "createdAtMs": 1772016952472,
+    "approvedAtMs": 1772016952472
+  },
+  "dcb9e1596e8b3538d8f952ece3b3e1af7f1afcc3fd947bb3b14a705bf0d66d0f": {
+    "deviceId": "dcb9e1596e8b3538d8f952ece3b3e1af7f1afcc3fd947bb3b14a705bf0d66d0f",
+    "publicKey": "xsRYslt68uKFtezXCP410grstimQOOt-UejS1jRpdY4",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "remoteIp": "192.168.65.1",
+    "tokens": {
+      "operator": {
+        "token": "h7z1u84UySmYWDfZAaq87roYQjIFL_HIf3wI_mhdppA",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1772016953302,
+        "lastUsedAtMs": 1772092141175
+      }
+    },
+    "createdAtMs": 1772016953302,
+    "approvedAtMs": 1772016953302
+  },
+  "6d233ef500b78f1f67f130ac5c35f098746baf89d5cc0c389b57dd7d949dff46": {
+    "deviceId": "6d233ef500b78f1f67f130ac5c35f098746baf89d5cc0c389b57dd7d949dff46",
+    "publicKey": "XbS78wvnRebSSwLat6extEFn7t3UKR7DpsfbtLvgc5E",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "remoteIp": "192.168.65.1",
+    "tokens": {
+      "operator": {
+        "token": "Eh_5P-V08cFZfHq4fnUW8pDZY9lYlI-Jw-u-ombTc5s",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1772087477819,
+        "lastUsedAtMs": 1772091169612
+      }
+    },
+    "createdAtMs": 1772087477819,
+    "approvedAtMs": 1772087477819
+  },
+  "55f491cbe8b8f67b470fa9a892ae26df43c68f71303502ce99fd45845e3ae847": {
+    "deviceId": "55f491cbe8b8f67b470fa9a892ae26df43c68f71303502ce99fd45845e3ae847",
+    "publicKey": "wPG6fwIBENaQUDgVhva1hmzYoiD1VOYfuB54wQF_VxA",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "remoteIp": "192.168.65.1",
+    "tokens": {
+      "operator": {
+        "token": "BsahVwV_R2gtTUsCjEd7ByjvKNFktSMBHbyEdtEKX2o",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1772087540293
+      }
+    },
+    "createdAtMs": 1772087540293,
+    "approvedAtMs": 1772087540293
+  }
+}

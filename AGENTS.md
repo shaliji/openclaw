@@ -138,6 +138,109 @@
 - Never commit or publish real phone numbers, videos, or live configuration values. Use obviously fake placeholders in docs, tests, and examples.
 - Release flow: always read `docs/reference/RELEASING.md` and `docs/platforms/mac/release.md` before any release work; do not ask routine questions once those docs answer them.
 
+### 🔐 API Key & Secret Management (MUST READ)
+
+**铁律：任何真实密钥、token、密码禁止硬编码到任何版本控制文件中。**
+
+#### 正确做法：使用环境变量引用
+
+在 `config/openclaw.json` 中，使用 `${ENV_VAR_NAME}` 语法引用环境变量，而不是写入明文值：
+
+```jsonc
+// ✅ 正确 — 通过环境变量引用
+{
+  "models": {
+    "providers": {
+      "zai": {
+        "apiKey": "${ZAI_API_KEY}"
+      }
+    }
+  }
+}
+
+// ❌ 错误 — 硬编码明文密钥，绝对禁止
+{
+  "models": {
+    "providers": {
+      "zai": {
+        "apiKey": "cc986a6e4d804d87a8cf35b86ad95503.xxxxx"
+      }
+    }
+  }
+}
+```
+
+真实密钥**只能**存放在以下位置（均已被 `.gitignore` 覆盖）：
+
+| 文件 | 用途 | gitignored |
+|------|------|-----------|
+| `.env` | 本地环境变量（API keys、tokens） | ✅ 是 |
+| `config/openclaw.json` | 网关配置（引用 `${VAR}` 而非明文） | ✅ 是 |
+
+#### 新增 Provider 时的检查清单
+
+1. **正确**：在 `.env` 写入 `NEW_PROVIDER_API_KEY=sk-xxx...`
+2. **正确**：在 `config/openclaw.json` 写入 `"apiKey": "${NEW_PROVIDER_API_KEY}"`
+3. **必须**：在 `docker-compose.yml` 的 `environment` 块中同步添加该变量透传 —— **宿主机 `.env` 里有值，但容器拿不到，必须显式透传**：
+   ```yaml
+   environment:
+     ZAI_API_KEY: ${ZAI_API_KEY}
+     NEW_PROVIDER_API_KEY: ${NEW_PROVIDER_API_KEY}   # ← 每新增一个 provider 必须同步加这里
+   ```
+   openclaw-gateway 和 openclaw-cli 两个 service **都要加**，否则容器启动报 `MissingEnvVarError`。
+4. 运行 `git check-ignore -v config/openclaw.json` 确认文件已被 gitignore 拦截
+5. 提交前运行 `git diff --staged | grep -i 'api_key\|apikey\|secret\|token'` 确认无明文密钥泄入暂存区
+
+#### Google (Gemini) Provider 完整配置格式
+
+`google` 是内置 Provider，必须包含以下**三个字段**，缺一不可（少 `baseUrl` 或 `api` 会导致请求失败）：
+
+```jsonc
+"google": {
+  "baseUrl": "https://generativelanguage.googleapis.com/v1beta",  // 必填
+  "apiKey": "${GEMINI_API_KEY}",
+  "api": "google-generative-ai",  // 必填，区别于 openai-completions
+  "models": [
+    { "id": "gemini-3-flash", "name": "Gemini 3 Flash", ... },
+    { "id": "gemini-3-pro",   "name": "Gemini 3 Pro",   ... }
+  ]
+}
+```
+
+> **Model ID 规范化**：写 `gemini-3-flash`，OpenClaw 引擎会自动映射为 `gemini-3-flash-preview`，日志中可见 `[gateway] agent model: google/gemini-3-flash-preview`，这是正常行为。
+
+#### Docker 容器重建 vs 重启
+
+| 操作 | 命令 | 适用场景 |
+|------|------|----------|
+| **重启**（不生效配置变更） | `docker-compose restart` | 仅重启进程，**不会**重读 `docker-compose.yml` 的 `environment` 变更 |
+| **重建**（生效所有变更） | `docker-compose up -d` | 修改 `docker-compose.yml`（含 environment）后必须用此命令 |
+
+**铁律：修改过 `docker-compose.yml` 后，一律用 `docker-compose up -d`，不要用 `restart`。**
+
+#### Gateway Token 安全
+
+`docker-compose.yml` 中 `OPENCLAW_GATEWAY_TOKEN` 有默认值 `my_secret_token_123`，**必须**在 `.env` 中覆盖为强随机值：
+
+```bash
+# 生成强 token（32字节 hex）
+openssl rand -hex 32
+```
+
+然后写入 `.env`：
+
+```env
+OPENCLAW_GATEWAY_TOKEN=<openssl 生成的随机值>
+```
+
+#### 泄露应急处理
+
+如果密钥意外被 `git commit`：
+1. **立即**在对应平台（bigmodel.cn、OpenAI 等）**吊销并重新生成**该密钥
+2. 使用 `git filter-repo` 或 BFG Repo-Cleaner 从 git 历史中清除
+3. 若已 push 到远端，立即 force-push 净化后的历史并通知所有协作者
+
+
 ## GHSA (Repo Advisory) Patch/Publish
 
 - Before reviewing security advisories, read `SECURITY.md`.

@@ -1,6 +1,13 @@
 node_modules
 **/node_modules/
 .env
+
+# Local OpenClaw config (may contain API keys / tokens — NEVER commit)
+config/openclaw.json
+config/**/auth.json
+config/**/auth-profiles.json
+config/**/*.bak*
+
 docker-compose.extra.yml
 dist
 pnpm-lock.yaml

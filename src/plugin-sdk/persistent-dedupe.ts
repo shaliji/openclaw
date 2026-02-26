@@ -105,6 +105,8 @@ export function createPersistentDedupe(options: PersistentDedupeOptions): Persis
     now: number,
     onDiskError?: (error: unknown) => void,
   ): Promise<boolean> {
+    // 内存层快速拦截：miss 时会自动 touch 写入，命中则直接返回（重复）。
+    // 这意味着同一进程内首次调用已将 scopedKey 写入内存，后续重试会在此被拦截。
     if (memory.check(scopedKey, now)) {
       return false;
     }

@@ -138,6 +138,34 @@ Run `openclaw doctor` to surface risky/misconfigured DM policies.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=openclaw/openclaw&type=date&legend=top-left)](https://www.star-history.com/#openclaw/openclaw&type=date&legend=top-left)
 
+## Browser Sandbox Ops (Docker)
+
+When running OpenClaw in Docker, the browser runs in an isolated container. Use these steps to manually take over the browser for logins (e.g. Ctrip, ChatGPT) or to troubleshoot visual issues.
+
+### 1. Connecting via Chrome Inspect (Recommended)
+
+This allows you to see the real-time browser screen and interact with it using your local keyboard/mouse.
+
+1.  Open **Chrome** on your host machine.
+2.  Navigate to `chrome://inspect/#devices`.
+3.  Click **"Configure..."** and add `127.0.0.1:18800`.
+4.  Under **"Remote Target"**, find the active page and click **"inspect"**.
+5.  A debug window will pop up. You can now browse and login manually.
+
+### 2. Quick Status Check
+
+*   **Tab List (JSON):** [http://127.0.0.1:18800/json](http://127.0.0.1:18800/json)
+*   **CDP Endpoint:** `127.0.0.1:18800` (mapped to internal 18801)
+
+### 3. Troubleshooting Chinese Characters (Font Issue)
+
+If you see square blocks instead of Chinese text, run this inside your terminal to install fonts and restart the browser:
+
+```bash
+docker exec -u root openclaw-openclaw-sandbox-browser-1 sh -c "apt-get update && apt-get install -y fonts-wqy-zenhei fonts-wqy-microhei && fc-cache -fv"
+docker restart openclaw-openclaw-sandbox-browser-1
+```
+
 ## Everything we built so far
 
 ### Core platform

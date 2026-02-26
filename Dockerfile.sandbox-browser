@@ -1,32 +1,38 @@
-FROM debian:bookworm-slim@sha256:98f4b71de414932439ac6ac690d7060df1f27161073c5036a7553723881bffbe
+FROM debian:bookworm-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
-    bash \
-    ca-certificates \
+# 使用清华源加速安装
+RUN echo "Types: deb\n\
+URIs: http://mirrors.tuna.tsinghua.edu.cn/debian\n\
+Suites: bookworm bookworm-updates bookworm-backports\n\
+Components: main\n\
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg\n\n\
+Types: deb\n\
+URIs: http://mirrors.tuna.tsinghua.edu.cn/debian-security\n\
+Suites: bookworm-security\n\
+Components: main\n\
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg" > /etc/apt/sources.list.d/debian.sources \
+  && apt-get update && apt-get install -y --no-install-recommends \
     chromium \
-    curl \
-    fonts-liberation \
-    fonts-noto-color-emoji \
-    git \
-    jq \
-    novnc \
-    python3 \
-    socat \
-    websockify \
-    x11vnc \
-    xvfb \
-  && rm -rf /var/lib/apt/lists/*
+    ca-certificates \
+    nginx \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY scripts/sandbox-browser-entrypoint.sh /usr/local/bin/openclaw-sandbox-browser
-RUN chmod +x /usr/local/bin/openclaw-sandbox-browser
+# 复制 nginx 配置文件
+COPY nginx.sandbox.conf /etc/nginx/nginx.conf
 
-RUN useradd --create-home --shell /bin/bash sandbox
-USER sandbox
+# 创建非 root 用户
+RUN useradd -m sandbox
 WORKDIR /home/sandbox
 
-EXPOSE 9222 5900 6080
+# 复制并授权 entrypoint
+COPY scripts/sandbox-browser-entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh && chown sandbox:sandbox /usr/local/bin/entrypoint.sh
 
-CMD ["openclaw-sandbox-browser"]
+USER sandbox
+
+# 暴露 18800
+EXPOSE 18800
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
