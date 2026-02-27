@@ -1,27 +1,4 @@
 {
   "version": 2,
-  "runs": {
-    "227e0be6-e59a-4a35-82eb-b1a83167b98f": {
-      "runId": "227e0be6-e59a-4a35-82eb-b1a83167b98f",
-      "childSessionKey": "agent:main:subagent:82f89200-0358-47a9-91c3-27bd71f77b22",
-      "requesterSessionKey": "agent:main:main",
-      "requesterOrigin": {
-        "channel": "feishu",
-        "to": "user:ou_4dda4fb0812790202dcaa7d99bd345f7",
-        "accountId": "default"
-      },
-      "requesterDisplayKey": "agent:main:main",
-      "task": "你的任务：每隔30分钟查询一次张掖西到杭州（直达Z596次）明天（2月27日）的软卧和硬卧余票情况，查询到北京时间晚上8点（UTC 12:00）为止。\n\n查询时间表（UTC时间）：\n- 08:00（北京时间16:00）\n- 08:30（北京时间16:30）\n- 09:00（北京时间17:00）\n- 09:30（北京时间17:30）\n- 10:00（北京时间18:00）\n- 10:30（北京时间18:30）\n- 11:00（北京时间19:00）\n- 11:30（北京时间19:30）\n\n查询后立即通过 message 工具发送结果到用户：\n- 如果有软卧或硬卧票：发送\"有票\"\n- 如果都没有：发送\"没票\"\n\n查询步骤：\n1. 使用 browser 工具的 sandbox profile\n2. 打开：https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=%E5%BC%A0%E6%8E%96&aStation=%E6%9D%AD%E5%B7%9E&dDate=2026-02-27&rDate=&trainsType=&hubCityName=&highSpeedOnly=0\n3. 查找 Z596 车次\n4. 检查硬卧（¥463.5）和软卧（¥734.5）的余票状态\n5. 通过 message 工具发送结果到 feishu 频道，target 为 ou_4dda4fb0812790202dcaa7d99bd345f7\n\n重要：\n- UTC 12:00 后停止查询，不发送最终报告\n- 每次查询后立即发送\"有票\"或\"没票\"\n\n立即开始第一次查询！",
-      "cleanup": "keep",
-      "expectsCompletionMessage": true,
-      "spawnMode": "run",
-      "label": "ticket-checker",
-      "model": "zai/glm-4.7",
-      "runTimeoutSeconds": 14400,
-      "createdAt": 1772092708964,
-      "startedAt": 1772092709252,
-      "archiveAtMs": 1772096308964,
-      "cleanupHandled": false
-    }
-  }
+  "runs": {}
 }

@@ -1,0 +1,126 @@
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+│
+◇  Config ───────────────────────────────────────────────────╮
+│                                                            │
+│  Config invalid; doctor will run with best-effort config.  │
+│                                                            │
+├────────────────────────────────────────────────────────────╯
+2026-02-27T02:39:21.326Z [gateway] feishu_doc: Registered feishu_doc, feishu_app_scopes
+2026-02-27T02:39:21.327Z [gateway] feishu_wiki: Registered feishu_wiki tool
+2026-02-27T02:39:21.327Z [gateway] feishu_drive: Registered feishu_drive tool
+2026-02-27T02:39:21.328Z [gateway] feishu_bitable: Registered bitable tools
+2026-02-27T02:39:21.340Z [canvas] host mounted at http://0.0.0.0:18789/__openclaw__/canvas/ (root /Users/shaliji/Desktop/yuanxing/openclaw/config/canvas)
+2026-02-27T02:39:21.426Z [heartbeat] started
+2026-02-27T02:39:21.428Z [health-monitor] started (interval: 300s, grace: 60s)
+2026-02-27T02:39:21.429Z [gateway] agent model: google/gemini-3-flash-preview
+2026-02-27T02:39:21.429Z [gateway] listening on ws://0.0.0.0:18789 (PID 43553)
+2026-02-27T02:39:21.430Z [gateway] log file: /tmp/openclaw/openclaw-2026-02-27.log
+2026-02-27T10:39:21.438+08:00 [info]: [ 'client ready' ]
+2026-02-27T02:39:21.467Z [browser/server] Browser control listening on http://127.0.0.1:18791/ (auth=token)
+2026-02-27T02:39:21.471Z [feishu] starting feishu[default] (mode: websocket)
+2026-02-27T02:39:21.870Z [feishu] feishu[default]: bot open_id resolved: ou_12060b82a2a001ae7760fe350b51e42d
+2026-02-27T10:39:21.872+08:00 [info]: [ 'event-dispatch is ready' ]
+2026-02-27T02:39:21.875Z [feishu] feishu[default]: starting WebSocket connection...
+2026-02-27T10:39:21.878+08:00 [info]: [
+  '[ws]',
+  'receive events or callbacks through persistent connection only available in self-build & Feishu app, Configured in:\n' +
+    '        Developer Console(开发者后台) \n' +
+    '          ->\n' +
+    '        Events and Callbacks(事件与回调)\n' +
+    '          -> \n' +
+    '        Mode of event/callback subscription(订阅方式)\n' +
+    '          -> \n' +
+    '        Receive events/callbacks through persistent connection(使用 长连接 接收事件/回调)'
+]
+2026-02-27T02:39:21.882Z [feishu] feishu[default]: WebSocket client started
+2026-02-27T10:39:22.259+08:00 [info]: [ '[ws]', 'ws client ready' ]
+2026-02-27T02:40:35.387Z [ws] webchat connected conn=7cbda5d6-cf8a-48ec-b69d-97b3a579f77d remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-27T02:40:36.457Z [ws] ⇄ res ✓ chat.history 150ms conn=7cbda5d6…f77d id=6390a1a0…b060
+2026-02-27T02:42:31.894Z [ws] webchat disconnected code=1001 reason=n/a conn=7cbda5d6-cf8a-48ec-b69d-97b3a579f77d
+2026-02-27T02:42:32.041Z [ws] webchat connected conn=04496340-4f19-4cb2-9399-c7a585201d34 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-27T02:42:32.153Z [ws] ⇄ res ✓ chat.history 87ms conn=04496340…1d34 id=a44762f8…c6f7
+2026-02-27T02:42:32.171Z [ws] ⇄ res ✓ node.list 106ms conn=04496340…1d34 id=886c70ae…71e8
+2026-02-27T02:42:32.172Z [ws] ⇄ res ✓ device.pair.list 106ms conn=04496340…1d34 id=560617e2…a467

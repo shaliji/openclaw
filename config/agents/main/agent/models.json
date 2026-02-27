@@ -9,9 +9,7 @@
           "id": "glm-4-flash",
           "name": "GLM-4 Flash (Free)",
           "reasoning": true,
-          "input": [
-            "text"
-          ],
+          "input": ["text"],
           "contextWindow": 128000,
           "maxTokens": 128000,
           "cost": {
@@ -26,9 +24,7 @@
           "id": "glm-5",
           "name": "GLM-5",
           "reasoning": true,
-          "input": [
-            "text"
-          ],
+          "input": ["text"],
           "contextWindow": 204800,
           "maxTokens": 131072,
           "cost": {
@@ -43,9 +39,7 @@
           "id": "glm-4.7",
           "name": "GLM-4.7",
           "reasoning": true,
-          "input": [
-            "text"
-          ],
+          "input": ["text"],
           "contextWindow": 204800,
           "maxTokens": 131072,
           "cost": {
@@ -60,17 +54,14 @@
     },
     "google": {
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
-      "apiKey": "AIzaSyC7P8BNpdwZH85ojLqjSDpDJ3HrT5uL-so",
+      "apiKey": "AIzaSyCr4GzsARhBglW0pIfCXKk-JaUCLgK5uts",
       "api": "google-generative-ai",
       "models": [
         {
           "id": "gemini-3-flash-preview",
           "name": "Gemini 3 Flash (Preview)",
           "reasoning": true,
-          "input": [
-            "text",
-            "image"
-          ],
+          "input": ["text", "image"],
           "contextWindow": 1048576,
           "maxTokens": 65536,
           "cost": {
@@ -85,10 +76,7 @@
           "id": "gemini-2.0-flash",
           "name": "Gemini 2.0 Flash",
           "reasoning": false,
-          "input": [
-            "text",
-            "image"
-          ],
+          "input": ["text", "image"],
           "contextWindow": 1048576,
           "maxTokens": 65536,
           "cost": {
@@ -100,6 +88,10 @@
           "api": "google-generative-ai"
         }
       ]
+    },
+    "github-copilot": {
+      "baseUrl": "https://api.individual.githubcopilot.com",
+      "models": []
     }
   }
 }

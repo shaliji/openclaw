@@ -1,0 +1,329 @@
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+Failed to read config at /Users/shaliji/Desktop/yuanxing/openclaw/config/openclaw.json MissingEnvVarError: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+    at substituteString (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:865:54)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:888:40)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at substituteAny (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:892:65)
+    at resolveConfigEnvVars (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:906:9)
+    at resolveConfigForRead (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8048:22)
+    at Object.loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8070:50)
+    at loadConfig (file:///Users/shaliji/Desktop/yuanxing/openclaw/dist/config-D8wVkXOO.js:8507:20) {
+  varName: 'ZAI_API_KEY',
+  configPath: 'models.providers.zai.apiKey'
+}
+Config invalid
+File: ~/Desktop/yuanxing/openclaw/config/openclaw.json
+Problem:
+  - <root>: Missing env var "ZAI_API_KEY" referenced at config path: models.providers.zai.apiKey
+
+Run: openclaw doctor --fix
+2026-02-27T10:38:18.606+08:00 Gateway start blocked: set gateway.mode=local (current: unset) or pass --allow-unconfigured.
+2026-02-27T10:38:18.609+08:00 Config write audit: /Users/shaliji/Desktop/yuanxing/openclaw/config/logs/config-audit.jsonl
+2026-02-27T10:38:28.622+08:00 Gateway start blocked: set gateway.mode=local (current: unset) or pass --allow-unconfigured.
+2026-02-27T10:38:28.626+08:00 Config write audit: /Users/shaliji/Desktop/yuanxing/openclaw/config/logs/config-audit.jsonl
+2026-02-27T10:38:39.032+08:00 Gateway start blocked: set gateway.mode=local (current: unset) or pass --allow-unconfigured.
+2026-02-27T10:38:39.035+08:00 Config write audit: /Users/shaliji/Desktop/yuanxing/openclaw/config/logs/config-audit.jsonl
+2026-02-27T10:38:49.648+08:00 Gateway start blocked: set gateway.mode=local (current: unset) or pass --allow-unconfigured.
+2026-02-27T10:38:49.651+08:00 Config write audit: /Users/shaliji/Desktop/yuanxing/openclaw/config/logs/config-audit.jsonl
+2026-02-27T10:39:00.052+08:00 Gateway start blocked: set gateway.mode=local (current: unset) or pass --allow-unconfigured.
+2026-02-27T10:39:00.055+08:00 Config write audit: /Users/shaliji/Desktop/yuanxing/openclaw/config/logs/config-audit.jsonl
+2026-02-27T02:39:21.430Z [gateway] security warning: dangerous config flags enabled: gateway.controlUi.dangerouslyAllowHostHeaderOriginFallback=true. Run `openclaw security audit`.
+2026-02-27T02:39:27.695Z [ws] unauthorized conn=f12aeac1-1448-405d-a4f9-ff4fda5371cd remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:27.703Z [ws] closed before connect conn=f12aeac1-1448-405d-a4f9-ff4fda5371cd remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=4008 reason=connect failed
+2026-02-27T02:39:28.542Z [ws] unauthorized conn=e9fac4c3-b34f-462d-8db1-c626824d7f6f remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:28.544Z [ws] closed before connect conn=e9fac4c3-b34f-462d-8db1-c626824d7f6f remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:39:29.962Z [ws] unauthorized conn=9ceef7b3-cde0-4461-9b13-cf382b9f0a22 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:29.964Z [ws] closed before connect conn=9ceef7b3-cde0-4461-9b13-cf382b9f0a22 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:39:32.323Z [ws] unauthorized conn=40eb9b00-ff3a-4b13-bcad-7d0aeca5aab2 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:32.328Z [ws] closed before connect conn=40eb9b00-ff3a-4b13-bcad-7d0aeca5aab2 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:39:36.312Z [ws] unauthorized conn=d3cceb03-8b5b-410c-b62e-670fc2f8bda0 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:36.314Z [ws] closed before connect conn=d3cceb03-8b5b-410c-b62e-670fc2f8bda0 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:39:43.046Z [ws] unauthorized conn=18500cfd-af4c-4529-a860-09223fc77f19 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:43.049Z [ws] closed before connect conn=18500cfd-af4c-4529-a860-09223fc77f19 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:39:54.446Z [ws] unauthorized conn=c87e7abb-06d9-4235-965f-d22bd84e5dde remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:39:54.450Z [ws] closed before connect conn=c87e7abb-06d9-4235-965f-d22bd84e5dde remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:40:10.263Z [ws] unauthorized conn=cee63840-29a9-4a92-b448-66d3ef0b0b18 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:40:10.270Z [ws] closed before connect conn=cee63840-29a9-4a92-b448-66d3ef0b0b18 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)
+2026-02-27T02:40:26.012Z [ws] unauthorized conn=570f4653-55e5-4c8d-ad5d-a5f7940dd312 remote=127.0.0.1 client=openclaw-control-ui webchat vdev reason=token_mismatch
+2026-02-27T02:40:26.017Z [ws] closed before connect conn=570f4653-55e5-4c8d-ad5d-a5f7940dd312 remote=127.0.0.1 fwd=n/a origin=http://127.0.0.1:18789 host=127.0.0.1:18789 ua=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 code=1008 reason=unauthorized: gateway token mismatch (open the dashboard URL and paste the token in Control UI settings)

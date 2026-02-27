@@ -1,0 +1,189 @@
+{
+  "heartbeat": {
+    "defaultAgentId": "main",
+    "agents": [
+      {
+        "agentId": "main",
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000
+      }
+    ]
+  },
+  "channelSummary": [],
+  "queuedSystemEvents": [],
+  "sessions": {
+    "paths": ["/Users/shaliji/.openclaw/agents/main/sessions/sessions.json"],
+    "count": 0,
+    "defaults": {
+      "model": "claude-opus-4-6",
+      "contextTokens": 200000
+    },
+    "recent": [],
+    "byAgent": [
+      {
+        "agentId": "main",
+        "path": "/Users/shaliji/.openclaw/agents/main/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      }
+    ]
+  },
+  "os": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.0.0",
+    "label": "macos 26.0.1 (arm64)"
+  },
+  "update": {
+    "root": "/Users/shaliji/Desktop/yuanxing/openclaw",
+    "installKind": "git",
+    "packageManager": "pnpm",
+    "git": {
+      "root": "/Users/shaliji/Desktop/yuanxing/openclaw",
+      "sha": "a9801660da8e1dc9f309a8fa29c0eb53c03c3263",
+      "tag": null,
+      "branch": "main",
+      "upstream": "origin/main",
+      "dirty": true,
+      "ahead": 1,
+      "behind": 133,
+      "fetchOk": true
+    },
+    "deps": {
+      "manager": "pnpm",
+      "status": "ok",
+      "lockfilePath": "/Users/shaliji/Desktop/yuanxing/openclaw/pnpm-lock.yaml",
+      "markerPath": "/Users/shaliji/Desktop/yuanxing/openclaw/node_modules/.modules.yaml"
+    },
+    "registry": {
+      "latestVersion": "2026.2.25"
+    }
+  },
+  "updateChannel": "dev",
+  "updateChannelSource": "git-branch",
+  "memory": {
+    "agentId": "main",
+    "backend": "builtin",
+    "files": 0,
+    "chunks": 0,
+    "dirty": true,
+    "workspaceDir": "/Users/shaliji/.openclaw/workspace",
+    "dbPath": "/Users/shaliji/.openclaw/memory/main.sqlite",
+    "provider": "gemini",
+    "model": "gemini-embedding-001",
+    "requestedProvider": "auto",
+    "sources": ["memory"],
+    "extraPaths": [],
+    "sourceCounts": [
+      {
+        "source": "memory",
+        "files": 0,
+        "chunks": 0
+      }
+    ],
+    "cache": {
+      "enabled": true,
+      "entries": 0
+    },
+    "fts": {
+      "enabled": true,
+      "available": true
+    },
+    "vector": {
+      "enabled": true,
+      "available": true,
+      "extensionPath": "/Users/shaliji/Desktop/yuanxing/openclaw/node_modules/.pnpm/sqlite-vec@0.1.7-alpha.2/node_modules/sqlite-vec-darwin-arm64/vec0.dylib"
+    },
+    "batch": {
+      "enabled": false,
+      "failures": 0,
+      "limit": 2,
+      "wait": true,
+      "concurrency": 2,
+      "pollIntervalMs": 2000,
+      "timeoutMs": 3600000
+    },
+    "custom": {
+      "searchMode": "hybrid"
+    }
+  },
+  "memoryPlugin": {
+    "enabled": true,
+    "slot": "memory-core"
+  },
+  "gateway": {
+    "mode": "local",
+    "url": "ws://127.0.0.1:18789",
+    "urlSource": "local loopback",
+    "misconfigured": false,
+    "reachable": false,
+    "connectLatencyMs": null,
+    "self": null,
+    "error": "connect failed: connect ECONNREFUSED 127.0.0.1:18789"
+  },
+  "gatewayService": {
+    "label": "LaunchAgent",
+    "installed": false,
+    "loadedText": "not loaded",
+    "runtimeShort": "unknown"
+  },
+  "nodeService": {
+    "label": "LaunchAgent",
+    "installed": false,
+    "loadedText": "not loaded",
+    "runtimeShort": "unknown"
+  },
+  "agents": {
+    "defaultId": "main",
+    "agents": [
+      {
+        "id": "main",
+        "workspaceDir": "/Users/shaliji/.openclaw/workspace",
+        "bootstrapPending": false,
+        "sessionsPath": "/Users/shaliji/.openclaw/agents/main/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      }
+    ],
+    "totalSessions": 0,
+    "bootstrapPendingCount": 0
+  },
+  "securityAudit": {
+    "ts": 1772097681236,
+    "summary": {
+      "critical": 0,
+      "warn": 3,
+      "info": 1
+    },
+    "findings": [
+      {
+        "checkId": "summary.attack_surface",
+        "severity": "info",
+        "title": "Attack surface summary",
+        "detail": "groups: open=0, allowlist=0\ntools.elevated: enabled\nhooks.webhooks: disabled\nhooks.internal: disabled\nbrowser control: enabled\ntrust model: personal assistant (one trusted operator boundary), not hostile multi-tenant on one shared gateway"
+      },
+      {
+        "checkId": "gateway.trusted_proxies_missing",
+        "severity": "warn",
+        "title": "Reverse proxy headers are not trusted",
+        "detail": "gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.",
+        "remediation": "Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only."
+      },
+      {
+        "checkId": "gateway.token_too_short",
+        "severity": "warn",
+        "title": "Gateway token looks short",
+        "detail": "gateway auth token is 6 chars; prefer a long random token."
+      },
+      {
+        "checkId": "fs.state_dir.perms_readable",
+        "severity": "warn",
+        "title": "State dir is readable by others",
+        "detail": "/Users/shaliji/.openclaw mode=755; consider restricting to 700.",
+        "remediation": "chmod 700 /Users/shaliji/.openclaw"
+      }
+    ]
+  }
+}

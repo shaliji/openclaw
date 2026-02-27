@@ -172,10 +172,10 @@
 
 真实密钥**只能**存放在以下位置（均已被 `.gitignore` 覆盖）：
 
-| 文件 | 用途 | gitignored |
-|------|------|-----------|
-| `.env` | 本地环境变量（API keys、tokens） | ✅ 是 |
-| `config/openclaw.json` | 网关配置（引用 `${VAR}` 而非明文） | ✅ 是 |
+| 文件                   | 用途                               | gitignored |
+| ---------------------- | ---------------------------------- | ---------- |
+| `.env`                 | 本地环境变量（API keys、tokens）   | ✅ 是      |
+| `config/openclaw.json` | 网关配置（引用 `${VAR}` 而非明文） | ✅ 是      |
 
 #### 新增 Provider 时的检查清单
 
@@ -185,7 +185,7 @@
    ```yaml
    environment:
      ZAI_API_KEY: ${ZAI_API_KEY}
-     NEW_PROVIDER_API_KEY: ${NEW_PROVIDER_API_KEY}   # ← 每新增一个 provider 必须同步加这里
+     NEW_PROVIDER_API_KEY: ${NEW_PROVIDER_API_KEY} # ← 每新增一个 provider 必须同步加这里
    ```
    openclaw-gateway 和 openclaw-cli 两个 service **都要加**，否则容器启动报 `MissingEnvVarError`。
 4. 运行 `git check-ignore -v config/openclaw.json` 确认文件已被 gitignore 拦截
@@ -211,12 +211,26 @@
 
 #### Docker 容器重建 vs 重启
 
-| 操作 | 命令 | 适用场景 |
-|------|------|----------|
+| 操作                       | 命令                     | 适用场景                                                            |
+| -------------------------- | ------------------------ | ------------------------------------------------------------------- |
 | **重启**（不生效配置变更） | `docker-compose restart` | 仅重启进程，**不会**重读 `docker-compose.yml` 的 `environment` 变更 |
-| **重建**（生效所有变更） | `docker-compose up -d` | 修改 `docker-compose.yml`（含 environment）后必须用此命令 |
+| **重建**（生效所有变更）   | `docker-compose up -d`   | 修改 `docker-compose.yml`（含 environment）后必须用此命令           |
 
 **铁律：修改过 `docker-compose.yml` 后，一律用 `docker-compose up -d`，不要用 `restart`。**
+
+#### Docker 网关排障（会话丢失 / 拒绝连接）
+
+- 不要混用两套网关：`docker compose` 网关与宿主机 `openclaw gateway`（含 launchd）同时存在时，最容易出现“聊天记录看不到”或 token 不一致。
+- Docker 部署统一使用 `OPENCLAW_CONFIG_DIR` 对应的数据目录（例如 `config/`）；会话文件在 `config/agents/main/sessions/*.jsonl`，不是宿主机 `~/.openclaw`。
+- 若重启后提示 `127.0.0.1 refused to connect`：
+  - 先确认 Docker daemon 已启动，再执行 `docker compose ps`。
+  - 再看网关日志和端口：`docker compose logs --tail=120 openclaw-gateway`、`ss -ltnp | rg 18789`。
+- 出现 `MissingEnvVarError`（如 `ZAI_API_KEY`）时，检查两处同时透传：
+  - `.env` 中变量已设置。
+  - `docker-compose.yml` 里 `openclaw-gateway` 和 `openclaw-cli` 的 `environment` 都包含该变量。
+- Gateway token 固定规则：
+  - 仅在 `.env` 维护一个 `OPENCLAW_GATEWAY_TOKEN`。
+  - `docker-compose.yml` 两个 service 都引用同一个 `${OPENCLAW_GATEWAY_TOKEN}`，禁止一个默认值一个显式值导致漂移。
 
 #### Gateway Token 安全
 
@@ -236,10 +250,10 @@ OPENCLAW_GATEWAY_TOKEN=<openssl 生成的随机值>
 #### 泄露应急处理
 
 如果密钥意外被 `git commit`：
+
 1. **立即**在对应平台（bigmodel.cn、OpenAI 等）**吊销并重新生成**该密钥
 2. 使用 `git filter-repo` 或 BFG Repo-Cleaner 从 git 历史中清除
 3. 若已 push 到远端，立即 force-push 净化后的历史并通知所有协作者
-
 
 ## GHSA (Repo Advisory) Patch/Publish
 

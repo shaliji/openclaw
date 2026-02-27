@@ -154,8 +154,8 @@ This allows you to see the real-time browser screen and interact with it using y
 
 ### 2. Quick Status Check
 
-*   **Tab List (JSON):** [http://127.0.0.1:18800/json](http://127.0.0.1:18800/json)
-*   **CDP Endpoint:** `127.0.0.1:18800` (mapped to internal 18801)
+- **Tab List (JSON):** [http://127.0.0.1:18800/json](http://127.0.0.1:18800/json)
+- **CDP Endpoint:** `127.0.0.1:18800` (mapped to internal 18801)
 
 ### 3. Troubleshooting Chinese Characters (Font Issue)
 
@@ -468,6 +468,28 @@ Use these when you’re past the onboarding flow and want the deeper reference.
 - [Dashboard](https://docs.openclaw.ai/web/dashboard)
 
 ## Operations & troubleshooting
+
+- **Docker: history missing after restart**
+  - Symptom: chat history appears empty after reboot/redeploy.
+  - Cause: gateway is reading a different state directory.
+  - Verify the active Docker state dir (`OPENCLAW_CONFIG_DIR`) and check session files under `<OPENCLAW_CONFIG_DIR>/agents/main/sessions/`.
+  - Avoid running a second host gateway at the same time (`openclaw gateway ...`) when Docker is the intended runtime.
+
+- **Docker: `ERR_CONNECTION_REFUSED` on `127.0.0.1:18789`**
+  - Confirm Docker daemon is running, then run `docker compose ps`.
+  - Check logs: `docker compose logs --tail=120 openclaw-gateway`.
+  - Confirm listener: `ss -ltnp | rg 18789`.
+  - If `docker-compose.yml` changed, use `docker compose up -d` (not just `restart`).
+
+- **Docker: token mismatch / cannot connect WebChat**
+  - Keep exactly one source of truth in `.env`: `OPENCLAW_GATEWAY_TOKEN=...`.
+  - Ensure both `openclaw-gateway` and `openclaw-cli` use the same token value from `.env`.
+  - Recreate containers after token changes: `docker compose up -d`.
+
+- **Docker: `MissingEnvVarError` at startup**
+  - Example: missing `ZAI_API_KEY`/`GEMINI_API_KEY`.
+  - Add the variable in `.env` and explicitly pass it in `docker-compose.yml` `environment` for both `openclaw-gateway` and `openclaw-cli`.
+  - Recreate containers: `docker compose up -d`.
 
 - [Health checks](https://docs.openclaw.ai/gateway/health)
 - [Gateway lock](https://docs.openclaw.ai/gateway/gateway-lock)
