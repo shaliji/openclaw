@@ -2,7 +2,7 @@
   "providers": {
     "zai": {
       "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
-      "apiKey": "cc986a6e4d804d87a8cf35b86ad95503.FDawmuDrmRzV0dkd",
+      "apiKey": "${ZAI_API_KEY}",
       "api": "openai-completions",
       "models": [
         {
@@ -54,7 +54,7 @@
     },
     "google": {
       "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
-      "apiKey": "AIzaSyCr4GzsARhBglW0pIfCXKk-JaUCLgK5uts",
+      "apiKey": "${GEMINI_API_KEY}",
       "api": "google-generative-ai",
       "models": [
         {
